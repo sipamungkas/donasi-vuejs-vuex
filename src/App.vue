@@ -66,7 +66,6 @@ export default {
     },
     // handle emit dari component clients
     selectedBantuan(val) {
-      console.log(val);
       this.bantuan = val;
     },
     submitDonasi() {
