@@ -48,7 +48,7 @@ export default {
   data() {
     return {
       donatur: "",
-      clients: "",
+      bantuan: "",
       jumlah: 0
     };
   },
@@ -63,11 +63,11 @@ export default {
     // handle emit dari component donatur
     selectedDonatur(val) {
       this.donatur = val;
-      console.log(val);
     },
     // handle emit dari component clients
     selectedBantuan(val) {
-      this.clients = val;
+      console.log(val);
+      this.bantuan = val;
     },
     submitDonasi() {
       // dispatch berguna untuk memanggil fungsi yang ada di action

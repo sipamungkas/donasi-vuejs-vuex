@@ -5,9 +5,9 @@
       <select @change="$emit('selectedDonatur',$event.target.value)" class="form-control">
         <option value>Pilih Donatur</option>
         <option
-          v-for="donatur in listDonatur"
-          :key="donatur.id"
-          :value="donatur.id"
+          v-for="(donatur,index) in listDonatur"
+          :key="index+1"
+          :value="donatur.name"
         >{{donatur.name}}</option>
       </select>
     </div>
